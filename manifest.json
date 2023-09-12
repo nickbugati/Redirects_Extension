@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Redirects Extension",
+    "description": "A humorous Chrome extension that redirects popular sites to their less popular counterparts.",
+    "version": "1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "webNavigation",
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*.google.com/*",
+        "*://*.youtube.com/*",
+        "*://*.facebook.com/*",
+        "*://*.amazon.com/*",
+        "*://*.netflix.com/*",
+        "*://*.twitter.com/*",
+        "*://*.linkedin.com/*",
+        "*://*.apple.com/*",
+        "*://*.instagram.com/*",
+        "*://*.wikipedia.org/*"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    }
+}
